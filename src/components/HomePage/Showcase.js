@@ -1,10 +1,10 @@
 import React from 'react';
 
-function HomePage() {
+function Showcase() {
   return (
     <>
     </>
   );
 }
 
-export default HomePage;
+export default Showcase;
