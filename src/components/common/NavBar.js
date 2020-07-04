@@ -3,22 +3,26 @@ import './Common.css';
 
 function NavBar() {
   const openNav = () => {
-    document.getElementById("nav").style.width = "50%";
+    if(window.innerWidth < 601) {
+      document.getElementById("nav").style.width = "100%";
+    } else {
+      document.getElementById("nav").style.width = "50%";
+    } 
   }
   
   const closeNav = () => {
     document.getElementById("nav").style.width = "0%";
   }
-  
+
   return (
     <>
       <div id="nav" className="overlay">
-        <a href="javascript:void(0)" className="closebtn" onClick={closeNav}>&times;</a>
+        <span className="closebtn" onClick={closeNav}>&times;</span>
         <div className="overlay__content">
-          <a href="#">About</a>
-          <a href="#">Services</a>
-          <a href="#">Clients</a>
-          <a href="#">Contact</a>
+          <a href="kk">About</a>
+          <a href="ll">Services</a>
+          <a href="mm">Clients</a>
+          <a href="nn">Contact</a>
         </div>
       </div>
       <span className="openbtn" onClick={openNav}><i className="fa fa-reorder" style={{fontSize:'20px',fontWeight:'lighter',cursor:'pointer'}}></i></span>

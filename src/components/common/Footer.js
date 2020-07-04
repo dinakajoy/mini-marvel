@@ -2,6 +2,7 @@ import React from 'react';
 import icon from '../../images/icon.png';
 import marvelInsider from '../../images/marvel_insider.png';
 import mastercard from '../../images/mastercard-crop.png';
+import FooterNav from './FooterNav';
 import './Common.css';
 
 function Footer() {
@@ -49,30 +50,31 @@ function Footer() {
         </section>
 
         <section className="footer-five">
-          <h4 class="space-down">FOLLOW MARVEL</h4>
+          <h4 className="space-down">FOLLOW MARVEL</h4>
           <div className="social-links">
-            <i class="fa fa-facebook-official"></i>
-            <i class="fa fa-twitter"></i>
-            <i class="fa fa-instagram"></i>
-            <i class="fa fa-tumblr"></i>
-            <i class="fa fa-youtube-play"></i>
-            <i class="fa fa-snapchat-ghost"></i>
-            <i class="fa fa-pinterest"></i>
+            <i className="fa fa-facebook-official"></i>
+            <i className="fa fa-twitter"></i>
+            <i className="fa fa-instagram"></i>
+            <i className="fa fa-tumblr"></i>
+            <i className="fa fa-youtube-play"></i>
+            <i className="fa fa-snapchat-ghost"></i>
+            <i className="fa fa-pinterest"></i>
           </div>
         </section>     
       </footer>
 
-        <nav class="App-footer2">
-          <a class="" target="_self" href="https://disneytermsofuse.com">Terms of Use</a>
-          <a class="" target="_self" href="https://privacy.thewaltdisneycompany.com/en">Privacy Policy</a>
-          <a class="" target="_self" href="https://privacy.thewaltdisneycompany.com/en/current-privacy-policy/your-california-privacy-rights">Your California Privacy Rights</a>
-          <a class="" target="_self" href="https://privacy.thewaltdisneycompany.com/en/dnsmi/">Do Not Sell My Info</a>
-          <a class="" target="_self" href="https://privacy.thewaltdisneycompany.com/en/for-parents/childrens-online-privacy-policy">Children's Online Privacy Policy</a>
-          <a class="" target="_self" href="https://www.marvel.com/corporate/license_tou">License Agreement</a>
-          <a class="" target="_self" href="http://preferences-mgr.truste.com/?pid=disney01&amp;aid=marvel01&amp;type=marvel">Interest-Based Ads</a>
-          <a class="" target="_self" href="https://www.marvel.com/corporate/insider_terms">Marvel Insider Terms</a>
-          <span class="">© 2020 MARVEL</span>
+        <nav className="App-footer2">
+          <a className="" target="_self" href="https://disneytermsofuse.com">Terms of Use</a>
+          <a className="" target="_self" href="https://privacy.thewaltdisneycompany.com/en">Privacy Policy</a>
+          <a className="" target="_self" href="https://privacy.thewaltdisneycompany.com/en/current-privacy-policy/your-california-privacy-rights">Your California Privacy Rights</a>
+          <a className="" target="_self" href="https://privacy.thewaltdisneycompany.com/en/dnsmi/">Do Not Sell My Info</a>
+          <a className="" target="_self" href="https://privacy.thewaltdisneycompany.com/en/for-parents/childrens-online-privacy-policy">Children's Online Privacy Policy</a>
+          <a className="" target="_self" href="https://www.marvel.com/corporate/license_tou">License Agreement</a>
+          <a className="" target="_self" href="http://preferences-mgr.truste.com/?pid=disney01&amp;aid=marvel01&amp;type=marvel">Interest-Based Ads</a>
+          <a className="" target="_self" href="https://www.marvel.com/corporate/insider_terms">Marvel Insider Terms</a>
+          <span className="">© 2020 MARVEL</span>
         </nav>
+      <FooterNav />
     </>
   );
 }
