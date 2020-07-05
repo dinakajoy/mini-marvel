@@ -1,13 +1,14 @@
 import React from 'react';
+import {NavLink} from 'react-router-dom';
 import './Common.css';
 
 function FooterNav() {
   return (
     <>
       <div className="footerNavbar">
-        <a href="#home">Overview</a>
-        <a href="#news">In Comics Profile</a>
-        <a href="#contact">In Comics Full Report</a>
+        <NavLink to="/" activeClassName="active-link">Home</NavLink>
+        <NavLink to="/comics" activeClassName="active-link">Comics</NavLink>
+        <NavLink to="/comics-issues" activeClassName="active-link">Comics Issues</NavLink>
       </div>
     </>
   );

@@ -7,35 +7,35 @@ function BlogSection() {
       <h1>LATEST NEWS</h1>
       <div className="blogSection-wrapper">
         <div>
+          <img src='https://terrigen-cdn-dev.marvel.com/content/prod/1x/capmarv2019018006_col_card.jpg' alt="Marvel" />
+          <div>
+            <p>Comics</p>
+            <h3>Artist Cory Smith Joins 'Captain Marvel' As Carol Danvers Enters as the Accuser</h3>
+          </div>
+        </div>
+        <div>
           <img src='https://terrigen-cdn-dev.marvel.com/content/prod/1x/captain-marvel-18_card.jpg' alt="Marvel" />
           <div>
-            <p>Category One</p>
-            <h3>My Title One</h3>
+            <p>Comics</p>
+            <h3>A History of Accusers and Captain Marvel's New Role</h3>
           </div>
         </div>
         <div>
           <img src='https://terrigen-cdn-dev.marvel.com/content/prod/1x/flerken.jpg' alt="Marvel" />
           <div>
-            <p>Category Two</p>
-            <h3>My Title Two</h3>
+            <p>Culture & Lifestyle</p>
+            <h3>Peek Inside the Pages of ‘Beware the Flerken!’ With Writer Calliope Glass and Illustrator Rob McClurkan</h3>
           </div>
         </div>
         <div>
           <img src='https://terrigen-cdn-dev.marvel.com/content/prod/1x/storytrailer.jpg' alt="Marvel" />
           <div>
-            <p>Category Three</p>
-            <h3>My Title Three</h3>
-          </div>
-        </div>
-        <div>
-          <img src='https://terrigen-cdn-dev.marvel.com/content/prod/1x/stohl2.jpg' alt="Marvel" />
-          <div>
-            <p>Category Four</p>
-            <h3>My Title Four</h3>
+            <p>Games</p>
+            <h3>Marvel Games Comic Connection: MODOK</h3>
           </div>
         </div>
       </div>
-      <div class="pagination">
+      <div className="pagination">
         <a href="q">&laquo;</a>
         <a className="active" href="w">1</a>
         <a href="e">2</a>

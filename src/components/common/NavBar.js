@@ -1,4 +1,5 @@
 import React from 'react';
+import {NavLink} from 'react-router-dom';
 import './Common.css';
 
 function NavBar() {
@@ -19,10 +20,10 @@ function NavBar() {
       <div id="nav" className="overlay">
         <span className="closebtn" onClick={closeNav}>&times;</span>
         <div className="overlay__content">
-          <a href="kk">About</a>
-          <a href="ll">Services</a>
-          <a href="mm">Clients</a>
-          <a href="nn">Contact</a>
+          <NavLink to="kk">About</NavLink>
+          <NavLink to="ll">Services</NavLink>
+          <NavLink to="mm">Clients</NavLink>
+          <NavLink to="nn">Contact</NavLink>
         </div>
       </div>
       <span className="openbtn" onClick={openNav}><i className="fa fa-reorder" style={{fontSize:'20px',fontWeight:'lighter',cursor:'pointer'}}></i></span>

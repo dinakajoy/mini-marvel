@@ -1,7 +1,25 @@
-import React from 'react';
+import React, {useEffect} from 'react';
+import {NavLink} from 'react-router-dom';
 import './HomePage.css';
 
 function Showcase() {
+
+  const checkNav = () => {
+    const nav = document.querySelector('.showcaseNavbar');
+    let bounding = nav.getBoundingClientRect();
+    if (bounding.top <= 5) {
+      nav.style.position = 'fixed';
+      nav.style.bottom = '0';
+    } else {
+      nav.style.position = 'absolute';
+      nav.style.bottom = '17%';
+    }
+  }
+
+  useEffect(() => {
+    window.addEventListener('scroll', checkNav);
+  }, []);
+
   return (
     <>
       <section className="showcaseSection">
@@ -13,9 +31,9 @@ function Showcase() {
         </div>
       </section>
       <div className="showcaseNavbar">
-        <a href="#home">Overview</a>
-        <a href="#news">In Comics Profile</a>
-        <a href="#contact">In Comics Full Report</a>
+        <NavLink to="/" activeClassName="active-link">Home</NavLink>
+        <NavLink to="/comics" activeClassName="active-link">Comics</NavLink>
+        <NavLink to="/comics-issues" activeClassName="active-link">Comics Issues</NavLink>
       </div>
     </>
   );

@@ -42,7 +42,7 @@
   background-color: #202020;
   position: absolute;
   left: 30px;
-  top: 73%;
+  bottom: 17%;
 }
 .showcaseNavbar a {
   color: #f2f2f2af;
@@ -50,8 +50,7 @@
   display: inline-block;
   width: 100%;
   margin: auto;
-  padding: 20px 25px;
-  text-align: center;
+  padding: 15px 20px;
   text-transform: uppercase;
   font-size: 12px;
   font-weight: bold;
@@ -85,10 +84,9 @@
 
 /* AboutSection Styles */
 .about-marvel {
-  margin: 70px auto 80px;
-  padding: 30px 10px;
+  margin: 100px auto 30px auto;
+  padding: 50px 10px 0px 10px;
   z-index: 5;
-  text-align: center;
 }
 
 .about-img {
@@ -105,7 +103,7 @@
 }
 
 .red-button {
-  background-color: #E62429;
+  background-color: #e62429;
   border: 0;
   outline: 0;
   padding: 16px 40px;
@@ -115,8 +113,9 @@
   cursor: pointer;
   position: relative;
 }
-.red-button:before, .red-button:after {
-  content: '';
+.red-button:before,
+.red-button:after {
+  content: "";
   position: absolute;
   width: 0;
 }
@@ -138,7 +137,7 @@
 /* BlogSection Styles */
 .blogSection {
   background-color: #202020;
-  padding: 50px;
+  padding: 50px 10px;
   color: #fff;
 }
 .blogSection-wrapper {
@@ -148,15 +147,17 @@
 }
 .blogSection-wrapper h1 {
   margin: 20px auto;
+  text-transform: uppercase;
 }
 .blogSection-wrapper p {
   color: #ccc;
+  text-transform: uppercase;
 }
 .blogSection-wrapper h3 {
   font-size: 1rem;
 }
 .pagination {
-  width: 80%;
+  width: 90%;
   margin: 10px auto;
   text-align: center;
   display: flex;
@@ -166,27 +167,120 @@
 .pagination a {
   color: #fff;
   text-decoration: none;
-  transition: background-color .3s;
+  transition: background-color 0.3s;
   font-weight: bolder;
 }
 
-.pagination a.active {
-  color: #E62429;
+.pagination a.active,
+.pagination a:hover {
+  color: #e62429;
 }
 
-.pagination a:hover:not(.active) {background-color: transparent;}
+.pagination a:hover:not(.active) {
+  background-color: transparent;
+}
 /* End of BlogSection Styles */
 
 /* LatestVideoSection Styles */
+.latestVideo h2 {
+  font-size: 2rem;
+  margin: 20px auto;
+}
+.latestVideo {
+  padding: 50px 10px 20px 10px;
+}
+.latestVideo h2,
+.latestVideo .title {
+  text-transform: uppercase;
+}
+.latestVideo .title {
+  display: none;
+  font-size: 0.8rem;
+  color: #a09393;
+  margin: 10px auto;
+}
+.latestVideo h3 {
+  font-size: 1.7rem;
+  margin: 10px auto;
+}
+.latestVideo-moreVideos {
+  overflow: auto;
+  display: flex;
+  flex-direction: row;
+  margin: 30px auto;
+  white-space: nowrap;
+  scrollbar-width: thin;
+  -webkit-scrollbar: thin;
+  scrollbar-color: #e62429;
+  scrollbar-base-color: #e62429;
+  max-width: 100%;
+}
+.latestVideo-moreVideos .video {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  white-space: nowrap;
+  margin: 0 10px;
+  width: 70%;
+}
+.latestVideo-moreVideos video {
+  border: 2px solid #e62429;
+}
+.latestVideo-moreVideos h4 {
+  font-size: 0.6rem;
+  width: 70%;
+  margin-bottom: 50px;
+}
 /* End of LatestVideoSection Styles */
 
 /* ComicsSection Styles */
+.comics {
+  margin: 30px auto 60px auto;
+}
+.comics-wrapper {
+  overflow: auto;
+  display: flex;
+  flex-direction: row;
+  margin: 30px auto;
+  white-space: nowrap;
+  scrollbar-width: thin;
+  -webkit-scrollbar: thin;
+  scrollbar-color: #e62429;
+  scrollbar-base-color: #e62429;
+}
+.comics-details{
+  width: 80%;
+  margin: 10px;
+  background-color: #111111;
+  border-radius: 0 0 20px 0;
+}
+.comics-details img {
+  width: 100%;
+  height: 300px;
+  border-bottom: 4px solid #e62429;
+}
+.comics-title {
+  background-color: #111111;
+  color: #fff;
+  height: 100px;
+  width: 100%;
+  padding: 5px;
+  border-radius: 0 0 20px 0;
+}
+.comics-title h4 {
+  font-size: .7rem;
+}
+
 /* End of ComicsSection Styles */
 
 /* MarvelHQSection Styles */
+.lightbg {
+  background-color: #333333;
+  padding-top: 50px;
+}
 .marvelHQSection {
-  background-color: #181818;
-  padding: 50px 10px;
+  background-color: #111111;
+  padding: 10px 10px 20px 10px;
   color: #fff;
   text-align: center;
   display: grid;
@@ -194,17 +288,17 @@
   grid-gap: 30px;
 }
 .marvelHQSection p {
-  color: #E62429;
+  color: #e62429;
   font-weight: bold;
 }
 .marvelHQSection h3 {
   font-size: 1.5rem;
 }
 .marvelHQSection .red-button:before {
-  border-top: 20px solid #181818;
+  border-top: 20px solid #111111;
 }
-.marvelHQSection .red-button:after{
-  border-bottom: 20px solid #181818;
+.marvelHQSection .red-button:after {
+  border-bottom: 20px solid #111111;
 }
 /* End of MarvelHQSection Styles */
 
@@ -215,6 +309,9 @@
   }
   .blogSection-wrapper {
     grid-template-columns: 1fr 1fr;
+  }
+  .latestVideo .title {
+    display: block;
   }
 }
 @media (min-width: 375px) {
@@ -227,22 +324,38 @@
   }
   .about-marvel {
     text-align: left;
-    padding: 30px;
+    padding: 30px 20px;
   }
   .about-img {
-    height: 80vh; 
+    height: 80vh;
+  }
+  .blogSection {
+    padding: 50px 20px;
   }
   .blogSection-wrapper {
     grid-template-columns: repeat(3, 1fr);
   }
+  .pagination {
+    width: 55%;
+    margin: 20px auto;
+  }
 }
 
 @media (min-width: 601px) {
+  .blogSection {
+    padding: 50px 30px;
+  }
+  .blogSection h1 {
+    margin: 20px 0;
+  }
   .showcase {
     height: 67vh;
   }
   .about-img {
-    height: 100vh; 
+    height: 100vh;
+  }
+  .pagination {
+    width: 45%;
   }
 }
 
@@ -251,7 +364,8 @@
     background-image: url(../../images/one-lg.jpg);
     height: 70vh;
   }
-  .showcaseSection, .showcase {
+  .showcaseSection,
+  .showcase {
     clip-path: polygon(0 0, 100% 0, 100% calc(100% - 2vw), 0 100%);
     margin-bottom: 0;
   }
@@ -272,10 +386,11 @@
   }
   .about-marvel {
     display: grid;
-    grid-template-columns: 40% 60%;
-    /* padding: 0 50px 0 0; */
+    grid-template-columns: 50% 50%;
     font-size: 16px;
     text-align: left;
+    padding: 0;
+    margin: 100px auto 0 auto;
   }
   .about-marvel h2 {
     font-size: 2rem;
@@ -283,7 +398,7 @@
   .about-img {
     background-image: url(../../images/two-sm.jpg);
     background-repeat: no-repeat;
-    background-position: 70% center;
+    background-position: 77% top;
     background-size: cover;
     height: 120vh;
   }
@@ -297,9 +412,40 @@
   }
   .marvelHQSection {
     grid-template-columns: 1fr 1fr;
+    padding-left: 0;
+  }
+  .marvelHQSection-details {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    text-align: center;
   }
   .red-button {
     text-align: left;
     margin-left: 0;
+  }
+  .marvelHQSection-details .red-button {
+    margin: 10px auto;
+    text-align: left;
+  }
+  .pagination {
+    width: 35%;
+  }
+  .latestVideo-grid {
+    display: grid;
+    grid-template-columns: 75% 25%;
+    grid-gap: 10px;
+    padding: 0px 20px;
+  }
+  .latestVideo-moreVideos {
+    display: flex;
+    flex-direction: column;
+    overflow: auto;
+    height: 55vh;
+    margin: 0 auto;
+  }
+  .latestVideo-moreVideos h4:not(:last-child) {
+    margin-bottom: 15px;
   }
 }
