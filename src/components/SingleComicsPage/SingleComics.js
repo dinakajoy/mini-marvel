@@ -11,7 +11,7 @@ function SingleComics({ match }) {
 
   useEffect(() => {
     async function fetchData() {
-      const res = await fetch(`https://gateway.marvel.com/v1/public/comics/${comicId}?apikey=${REACT_APP_API_KEY}`);
+      const res = await fetch(`https://gateway.marvel.com/v1/public/comics/${comicId}?apikey=${process.env.REACT_APP_API_KEY}`);
       res
         .json()
         .then(res => {

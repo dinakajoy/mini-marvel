@@ -59,13 +59,12 @@ function ComicsSection() {
   return (
     <main>
       <section className="comicspage">
-        <select className="comics-order" value={format} onChange={handleFormat}>
-          <option  style={{padding: '10px'}}>--Order By Realese Date</option>
+        <div className="comicspage-wrapper">
+          {comics && <select className="comics-order" value={format} onChange={handleFormat}>
+          <option  style={{padding: '10px'}}>--Order By Realese Date--</option>
           <option value="ASC" style={{padding: '10px'}}>ASC</option>
           <option value="DESC"  style={{padding: '10px'}}>DESC</option>
-        </select>
-        <div className="comicspage-wrapper">
-    
+        </select>}
           {comics && comics.map((comic, index) => {
             if(index + 1) {
               return (
