@@ -20,10 +20,9 @@ function NavBar() {
       <div id="nav" className="overlay">
         <span className="closebtn" onClick={closeNav}>&times;</span>
         <div className="overlay__content">
-          <NavLink to="kk">About</NavLink>
-          <NavLink to="ll">Services</NavLink>
-          <NavLink to="mm">Clients</NavLink>
-          <NavLink to="nn">Contact</NavLink>
+          <NavLink exact to="/" activeClassName="active-navlink">Home</NavLink>
+          <NavLink to="/comics" activeClassName="active-navlink">Comics</NavLink>
+          <NavLink to="/comics-issues" activeClassName="active-navlink">Comics Issues</NavLink>
         </div>
       </div>
       <span className="openbtn" onClick={openNav}><i className="fa fa-reorder" style={{fontSize:'20px',fontWeight:'lighter',cursor:'pointer'}}></i></span>

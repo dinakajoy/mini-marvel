@@ -12,6 +12,19 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
+/* End of Scroll Styles */
+::-webkit-scrollbar {
+  width: 3px;
+}
+.inner-scroll::-webkit-scrollbar {
+  height: 3px;
+  margin-top: 30px;
+} 
+.inner-scroll::-webkit-scrollbar-thumb {
+  background-color: #e62429;
+}
+/* End of Scroll Styles */
+
 img {
   max-width: 100%;
 }

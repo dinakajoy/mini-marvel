@@ -62,7 +62,6 @@ function Footer() {
           </div>
         </section>     
       </footer>
-
         <nav className="App-footer2">
           <a className="" target="_self" href="https://disneytermsofuse.com">Terms of Use</a>
           <a className="" target="_self" href="https://privacy.thewaltdisneycompany.com/en">Privacy Policy</a>

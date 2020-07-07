@@ -1,6 +1,6 @@
 import React, {useEffect} from 'react';
 import {NavLink} from 'react-router-dom';
-import './HomePage.css';
+import './Common.css';
 
 function Showcase() {
 

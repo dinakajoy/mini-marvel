@@ -1,5 +1,6 @@
 import React from 'react';
-import Showcase from './Showcase';
+import Showcase from '../common/Showcase';
+import FollowSection from './FollowSection';
 import AboutSection from './AboutSection';
 import BlogSection from './BlogSection';
 import LatestVideoSection from './LatestVideoSection';
@@ -11,13 +12,7 @@ function HomePage() {
   return (
     <main>
       <Showcase />
-      <section className="follow">
-        <div>Follow: </div>
-        <span>
-          <i className="fa fa-facebook-official"></i>
-          <i className="fa fa-twitter"></i>
-        </span>
-      </section>
+      <FollowSection />
       <AboutSection />
       <BlogSection />
       <LatestVideoSection />
