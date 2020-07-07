@@ -19,7 +19,7 @@ function NavBar() {
     <>
       <div id="nav" className="overlay">
         <span className="closebtn" onClick={closeNav}>&times;</span>
-        <div className="overlay__content">
+        <div className="overlay__content" onClick={closeNav}>
           <NavLink exact to="/" activeClassName="active-navlink">Home</NavLink>
           <NavLink to="/comics" activeClassName="active-navlink">Comics</NavLink>
           <NavLink to="/comics-issues" activeClassName="active-navlink">Comics Issues</NavLink>

@@ -61,13 +61,14 @@ function ComicsIssueSection() {
   return (
     <main>
       <section className="comicsIssuepage">
+      
         {comicsIssues && <select className="comics-order" value={format} onChange={handleFormat}>
           <option>--Order By Realese Date</option>
           <option value="ASC">ASC</option>
           <option value="DESC">DESC</option>
         </select>}
-        <div className="comicsIssuepage-wrapper">
 
+        <div className="comicsIssuepage-wrapper">
           {comicsIssues && comicsIssues.map((comicIssue, index) => {
             if(index + 1) {
               return (
