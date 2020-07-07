@@ -33,7 +33,7 @@ function GetComicsIssue(format, offset) {
     setIsLoading(true);
     setError(false);
     const title = 'Captain Marvel';
-    fetch(`https://gateway.marvel.com/v1/public/comics?title=${title}&hasDigitalIssue=true&offset=${offset}&limit=20&apikey=${process.env.REACT_APP_API_KEY}`)
+    fetch(`https://gateway.marvel.com/v1/public/comics?title=${title}&hasDigitalIssue=true&offset=${offset}&limit=20&apikey=${REACT_APP_API_KEY}`)
       .then(res => res.json())
       .then(res => {
         let re = res.data.results;
