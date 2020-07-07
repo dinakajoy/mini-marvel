@@ -1,5 +1,6 @@
 import React, { useState, useRef, useCallback } from 'react';
-import GetComics from './GetComics';
+import {Link} from 'react-router-dom';
+import {GetComics} from './GetComics';
 import Loader from '../common/Loader';
 import './ComicsPage.css';
 
@@ -69,24 +70,28 @@ function ComicsSection() {
             if(index + 1) {
               return (
                 <div ref={lastComicsElementRef} key={index}>
+                  <Link to={`/comics/${comic.id}`}>
+                    <div key={comic.id} className="comicspage-details">
+                      <img data-src={`${comic.thumbnail.path}.${comic.thumbnail.extension}`} alt={comic.title} />
+                      <div className="comicspage-title">
+                        <h2>{comic.title}</h2>
+                        <p>{getDate(comic.modified)}</p>
+                      </div>
+                    </div>
+                  </Link>
+                </div>
+              )
+            } else {
+              return (
+                <Link to={`/comics/${comic.id}`}>
                   <div key={comic.id} className="comicspage-details">
-                    <img data-src={`${comic.thumbnail.path}.${comic.thumbnail.extension}`} alt={comic.title} />
+                    <img src={`${comic.thumbnail.path}.${comic.thumbnail.extension}`} alt={comic.title} />
                     <div className="comicspage-title">
                       <h2>{comic.title}</h2>
                       <p>{getDate(comic.modified)}</p>
                     </div>
                   </div>
-                </div>
-              )
-            } else {
-              return (
-                <div key={comic.id} className="comicspage-details">
-                  <img src={`${comic.thumbnail.path}.${comic.thumbnail.extension}`} alt={comic.title} />
-                  <div className="comicspage-title">
-                    <h2>{comic.title}</h2>
-                    <p>{getDate(comic.modified)}</p>
-                  </div>
-                </div>
+                </Link>
               )
             }
           })}

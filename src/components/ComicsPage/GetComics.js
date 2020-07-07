@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react';
 
-function GetComics(format, offset) {
+export function GetComics(format, offset) {
   const [isLoading, setIsLoading] = useState(true);
   const [error, setError] = useState(false);
   const [hasMore, setHasMore] = useState(false);
@@ -57,4 +57,3 @@ function GetComics(format, offset) {
   return {isLoading, error, comics, hasMore};
 }
 
-export default GetComics;

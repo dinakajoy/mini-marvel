@@ -1,4 +1,5 @@
 import React, { useState, useRef, useCallback } from 'react';
+import {Link} from 'react-router-dom';
 import GetComicsIssue from './GetComicIssues';
 import Loader from '../common/Loader';
 import './ComicsIssuePage.css';
@@ -71,24 +72,28 @@ function ComicsIssueSection() {
             if(index + 1) {
               return (
                 <div ref={lastComicsIssueElementRef} key={index}>
+                  <Link to={`/comics/${comicIssue.id}`}>
+                    <div key={comicIssue.id} className="comicsIssuepage-details">
+                      <img data-src={`${comicIssue.thumbnail.path}.${comicIssue.thumbnail.extension}`} alt={comicIssue.title} />
+                      <div className="comicsIssuepage-title">
+                        <h2>{comicIssue.title}</h2>
+                        <p>{getDate(comicIssue.modified)}</p>
+                      </div>
+                    </div>
+                  </Link>
+                </div>
+              )
+            } else {
+              return (
+                <Link to={`/comics/${comicIssue.id}`}>
                   <div key={comicIssue.id} className="comicsIssuepage-details">
-                    <img data-src={`${comicIssue.thumbnail.path}.${comicIssue.thumbnail.extension}`} alt={comicIssue.title} />
+                    <img src={`${comicIssue.thumbnail.path}.${comicIssue.thumbnail.extension}`} alt={comicIssue.title} />
                     <div className="comicsIssuepage-title">
                       <h2>{comicIssue.title}</h2>
                       <p>{getDate(comicIssue.modified)}</p>
                     </div>
                   </div>
-                </div>
-              )
-            } else {
-              return (
-                <div key={comicIssue.id} className="comicsIssuepage-details">
-                  <img src={`${comicIssue.thumbnail.path}.${comicIssue.thumbnail.extension}`} alt={comicIssue.title} />
-                  <div className="comicsIssuepage-title">
-                    <h2>{comicIssue.title}</h2>
-                    <p>{getDate(comicIssue.modified)}</p>
-                  </div>
-                </div>
+                </Link>
               )
             }
           })}
