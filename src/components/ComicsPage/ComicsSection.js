@@ -57,17 +57,17 @@ function ComicsSection() {
   })
 
   return (
-    <main>
+    <>
       <section className="comicspage">
 
-        {comics && <select className="comics-order" value={format} onChange={handleFormat}>
+        {comics.length > 0 && <select className="comics-order" value={format} onChange={handleFormat}>
           <option  style={{padding: '10px'}}>--Order By Realese Date--</option>
           <option value="ASC" style={{padding: '10px'}}>ASC</option>
           <option value="DESC"  style={{padding: '10px'}}>DESC</option>
         </select>}
-        
+
         <div className="comicspage-wrapper"> 
-          {comics && comics.map((comic, index) => {
+          {comics.length > 0 && comics.map((comic, index) => {
             if(index + 1) {
               return (
                 <div ref={lastComicsElementRef} key={index}>
@@ -101,7 +101,7 @@ function ComicsSection() {
           <div>{error && 'Sorry, There Was An Error!!!'}</div>
         </div>
       </section>
-    </main>
+    </>
   );
 }
 

@@ -8,7 +8,9 @@
   text-align: center;
 }
 .comicspage {
-  margin: 80px auto;
+  margin: 300px auto 80px auto;
+  position: relative;
+  padding: 50px 3px;
 }
 
 .comicspage-wrapper {
@@ -58,8 +60,9 @@
     grid-template-columns: 1fr 1fr;
   }
   .comicspage {
-    padding: 20px 30px;
-    margin: 100px auto;
+    margin: 250px auto 80px auto;
+    position: relative;
+    padding: 40px 10px;
   }
   .comics-order {
     width: 70%;
@@ -71,8 +74,9 @@
     grid-template-columns: repeat(3, 1fr);
   }
   .comicspage {
-    padding: 20px 40px;
-    margin: 110px auto;
+    margin: 250px auto 80px auto;
+    position: relative;
+    padding: 40px 15px;
   }
   .comics-order {
     width: 50%;
@@ -84,8 +88,8 @@
     grid-template-columns: repeat(4, 1fr);
   }
   .comicspage {
-    padding: 20px 50px;
-    margin: 130px auto;
+    padding: 20px 20px;
+    margin: 110px auto;
   }
   .comics-order {
     width: 40%;

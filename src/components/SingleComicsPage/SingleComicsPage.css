@@ -19,3 +19,12 @@
 .comicDetail-img {
   width: 100%;
 }
+@media (max-width: 400px) {
+  .comicDetail-img {
+    display: none;
+  }
+  .comic-title {
+    grid-template-columns: 1fr;
+    margin: 30px auto;
+  }
+}
