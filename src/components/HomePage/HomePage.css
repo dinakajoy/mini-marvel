@@ -179,9 +179,9 @@
   width: 70%;
 }
 
-.latestVideo-moreVideos video {
+/* .latestVideo-moreVideos video {
   border: 2px solid #e62429;
-}
+} */
 
 .latestVideo-moreVideos h4 {
   font-size: 0.6rem;

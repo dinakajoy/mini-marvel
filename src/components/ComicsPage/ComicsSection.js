@@ -40,7 +40,8 @@ function ComicsSection() {
     img.src = src;
   };
   const imgOptions = {
-    threshold: 100
+    threshold: 300,
+    rootMargin: '0px 0px 200px 0px'
   };
   const imgObserver = new IntersectionObserver((entries, imgObserver) => {
     entries.forEach(entry => {
