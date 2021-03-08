@@ -1,5 +1,4 @@
 import React, { useState, useRef, useCallback } from 'react';
-import { LazyLoadImage } from 'react-lazy-load-image-component';
 import { Link } from 'react-router-dom';
 import { GetComics } from './GetComics';
 import Loader from '../common/Loader';
