@@ -1,4 +1,5 @@
 import React, { useState, useRef, useCallback } from 'react';
+import { LazyLoadImage } from 'react-lazy-load-image-component';
 import { Link } from 'react-router-dom';
 import { GetComics } from './GetComics';
 import Loader from '../common/Loader';
@@ -74,7 +75,7 @@ function ComicsSection() {
                 <div ref={lastComicsElementRef} key={index}>
                   <Link to={`/comics/${comic.id}`}>
                     <div key={comic.id} className="comicspage-details">
-                      <img data-src={`${comic.thumbnail.path}.${comic.thumbnail.extension}`} alt={comic.title} />
+                      <img data-src={`${comic.thumbnail.path}.${comic.thumbnail.extension}`} alt={comic.title} width="100%" height="300px" />
                       <div className="comicspage-title">
                         <h2>{comic.title}</h2>
                         <p>{getDate(comic.modified)}</p>

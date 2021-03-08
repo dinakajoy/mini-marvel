@@ -1,22 +1,7 @@
-import React, { useState, useEffect } from 'react';
+import React from 'react';
 import './HomePage.css';
 
 function LatestVideoSection() {
-  // async function fetchData() {
-  //   const title = 'Captain Marvel';
-  //   const res = await fetch(`https://gateway.marvel.com/v1/public/stories&apikey=${process.env.REACT_APP_API_KEY}`);
-  //   res
-  //     .json()
-  //     .then(res => {
-  //       console.log(res);
-  //     })
-  //     .catch(err => console.log(err));
-  // }
-
-  // useEffect(() => {
-  //   fetchData();
-  // }, []);
-
   return (
     <section className="latestVideo">
       <h2>Latest Videos</h2>

@@ -52,9 +52,9 @@ const Header = () => {
       </div>
       <div className="lg-nav">
         <div className="header-wrapper1">
-          <div class="auth"><a href="#">SIGN IN</a> <span>|</span> <a href="#">JOIN</a></div>
+          <div className="auth"><a href="#">SIGN IN</a> <span>|</span> <a href="#">JOIN</a></div>
           <div className="img"><img src='/logo.png' id="logo2" className="logo" alt="Marvel" /></div>
-          <div class="mastercard-wrapper">
+          <div className="mastercard-wrapper">
             <img src={`${process.env.PUBLIC_URL}/images/mastercard.jpg`} alt="Marvel"/>
             <i className="fa fa-search lg-search" style={{fontSize:'20px', fontWeight:'lighter'}}></i>
           </div>
