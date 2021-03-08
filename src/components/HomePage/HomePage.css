@@ -1,5 +1,3 @@
-
-
 /* Follow styles */
 .follow {
   display: flex;
@@ -13,11 +11,14 @@
   font-weight: bold;
   border-bottom: 1px solid #ccc;
 }
-
 .follow span .fa {
   display: inline-block;
   padding: 0 10px;
   font-size: 20px;
+  cursor: pointer;
+}
+.follow span .fa:hover {
+  color: #000
 }
 
 /* End of Follow styles */
@@ -28,7 +29,6 @@
   padding: 50px 10px 0px 10px;
   z-index: 5;
 }
-
 .about-img {
   background-image: url(../../images/two-sm.jpg);
   background-repeat: no-repeat;
@@ -36,12 +36,10 @@
   background-size: cover;
   height: 40vh;
 }
-
 .about-details h2 {
   padding: 30px 0px;
   text-transform: uppercase;
 }
-
 .red-button {
   background-color: #e62429;
   border: 0;
@@ -56,21 +54,18 @@
 .red-button:hover {
   background-color: #b41c21;
 }
-
 .red-button:before,
 .red-button:after {
   content: "";
   position: absolute;
   width: 0;
 }
-
 .red-button:before {
   top: 0;
   left: 0;
   border-top: 20px solid #fff;
   border-right: 20px solid transparent;
 }
-
 .red-button:after {
   bottom: 0;
   right: 0;
@@ -86,27 +81,22 @@
   padding: 50px 10px;
   color: #fff;
 }
-
 .blogSection-wrapper {
   display: grid;
   grid-template-columns: 1fr;
   grid-gap: 30px;
 }
-
 .blogSection-wrapper h1 {
   margin: 20px auto;
   text-transform: uppercase;
 }
-
 .blogSection-wrapper p {
   color: #ccc;
   text-transform: uppercase;
 }
-
 .blogSection-wrapper h3 {
   font-size: 1rem;
 }
-
 .pagination {
   width: 90%;
   margin: 10px auto;
@@ -115,19 +105,16 @@
   flex-direction: row;
   justify-content: space-between;
 }
-
 .pagination a {
   color: #fff;
   text-decoration: none;
   transition: background-color 0.3s;
   font-weight: bolder;
 }
-
 .pagination a.active,
 .pagination a:hover {
   color: #e62429;
 }
-
 .pagination a:hover:not(.active) {
   background-color: transparent;
 }
@@ -135,60 +122,75 @@
 /* End of BlogSection Styles */
 
 /* LatestVideoSection Styles */
+.latestVideo {
+  padding: 50px 10px 20px 10px;
+}
+.latestVideo-videos,
+.latestVideo-videos img {
+  width: 100%;
+  height: 100%;
+}
+.latestVideo-moreVideos {
+  width: 100%;
+}
 .latestVideo h2 {
   font-size: 2rem;
   margin: 20px auto;
 }
-
-.latestVideo {
-  padding: 50px 10px 20px 10px;
-}
-
 .latestVideo h2,
 .latestVideo .title {
   text-transform: uppercase;
 }
-
 .latestVideo .title {
   display: none;
   font-size: 0.8rem;
   color: #a09393;
   margin: 10px auto;
 }
-
 .latestVideo h3 {
   font-size: 1.7rem;
   margin: 10px auto;
 }
-
-.latestVideo-moreVideos {
-  overflow: auto;
-  display: flex;
-  flex-direction: row;
-  margin: 30px auto;
-  white-space: nowrap;
-  max-width: 100%;
-}
-
 .latestVideo-moreVideos .video {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   white-space: nowrap;
   margin: 0 10px;
-  width: 70%;
+  width: 90%;
+  height: 100%;
+  opacity: .6;
+  cursor: pointer;
 }
-
+.latestVideo-moreVideos .video:hover {
+  opacity: 1;
+}
+.latestVideo-moreVideos h4 {
+  font-size: 0.6rem;
+  width: 90%;
+}
+.latestVideo-moreVideos .video:not(:last-child) h4 {
+  margin-bottom: 30px;
+}
+@media (max-width: 838px) {
+  .latestVideo-moreVideos {
+    display: flex;
+    justify-content: space-between;
+    overflow: auto;
+    margin-top: 20px;
+  }
+  .latestVideo-moreVideos .video {
+    width: 100%;
+    height: auto;
+  }
+  .latestVideo-moreVideos {
+    width: 100%;
+    height: auto;
+  }
+}
 /* .latestVideo-moreVideos video {
   border: 2px solid #e62429;
 } */
-
-.latestVideo-moreVideos h4 {
-  font-size: 0.6rem;
-  width: 70%;
-  margin-bottom: 50px;
-}
-
 /* End of LatestVideoSection Styles */
 
 /* ComicsSection Styles */
@@ -196,7 +198,6 @@
   margin: 30px auto 60px auto;
   padding: 20px;
 }
-
 .comics-wrapper {
   overflow: auto;
   display: flex;
@@ -204,7 +205,6 @@
   margin: 30px auto;
   white-space: nowrap;
 }
-
 .comics-details {
   width: 80%;
   margin: 10px;
@@ -213,13 +213,11 @@
   margin-bottom: 50px;
   
 }
-
 .comics-details img {
   width: 100%;
   height: 300px;
   border-bottom: 4px solid #e62429;
 }
-
 .comics-title {
   background-color: #111111;
   color: #fff;
@@ -232,7 +230,6 @@
 .comics-title:hover {
   background-color: #e62429;
 }
-
 .comics-title h4 {
   font-size: .7rem;
 }
@@ -240,42 +237,37 @@
   font-size: .6rem;
   color: #ccc;
 }
-
 /* End of ComicsSection Styles */
 
 /* MarvelHQSection Styles */
 .lightbg {
-  background-color: #333333;
-  padding-top: 50px;
+  background-color: #252525;
+  padding: 80px 0;
+  width: 100%;
 }
-
 .marvelHQSection {
   background-color: #111111;
-  padding: 10px 10px 20px 10px;
   color: #fff;
   text-align: center;
   display: grid;
   grid-template-columns: 1fr;
   grid-gap: 30px;
 }
-
 .marvelHQSection p {
   color: #e62429;
   font-weight: bold;
+  font-size: 1.2rem;
+  text-transform: uppercase;
 }
-
 .marvelHQSection h3 {
   font-size: 1.5rem;
 }
-
 .marvelHQSection .red-button:before {
   border-top: 20px solid #111111;
 }
-
 .marvelHQSection .red-button:after {
   border-bottom: 20px solid #111111;
 }
-
 /* End of MarvelHQSection Styles */
 
 @media (min-width: 320px) {
@@ -283,11 +275,9 @@
     margin: 220px auto 60px;
     padding: 20px;
   }
-
   .blogSection-wrapper {
     grid-template-columns: 1fr 1fr;
   }
-
   .latestVideo .title {
     display: block;
   }
@@ -298,24 +288,19 @@
     clip-path: polygon(0 0, 100% 0, 100% calc(100% - 3vw), 0 100%);
     margin-bottom: -10vw;
   }
-
   .about-marvel {
-    text-align: left;
+    text-align: center;
     padding: 30px 20px;
   }
-
   .about-img {
     height: 80vh;
   }
-
   .blogSection {
     padding: 50px 20px;
   }
-
   .blogSection-wrapper {
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: 1fr 1fr;
   }
-
   .pagination {
     width: 55%;
     margin: 20px auto;
@@ -326,32 +311,22 @@
   .blogSection {
     padding: 50px 30px;
   }
-
   .blogSection h1 {
     margin: 20px 0;
   }
-
-  
-
   .about-img {
     height: 100vh;
   }
-
   .pagination {
     width: 45%;
   }
 }
 
 @media (min-width: 839px) {
-  
-
   .follow {
     margin: 0px auto;
     border: 0;
   }
-
-  
-
   .about-marvel {
     display: grid;
     grid-template-columns: 50% 50%;
@@ -367,7 +342,6 @@
   .about-marvel h2 {
     font-size: 2rem;
   }
-
   .about-img {
     background-image: url(../../images/two-sm.jpg);
     background-repeat: no-repeat;
@@ -375,7 +349,6 @@
     background-size: cover;
     height: 110vh;
   }
-
   .about-details {
     display: flex;
     flex-direction: column;
@@ -384,52 +357,60 @@
   .blogSection-wrapper {
     grid-template-columns: repeat(4, 1fr);
   }
-
   .marvelHQSection {
     grid-template-columns: 1fr 1fr;
     padding-left: 0;
   }
-
   .marvelHQSection-details {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-content: center;
     text-align: center;
+    padding: 50px;
   }
-
   .red-button {
     text-align: left;
     margin-left: 0;
   }
-
   .marvelHQSection-details .red-button {
     margin: 10px auto;
     text-align: left;
   }
-
   .pagination {
     width: 35%;
   }
-
   .latestVideo-grid {
     display: grid;
     grid-template-columns: 75% 25%;
     grid-gap: 10px;
     padding: 0px 20px;
+    height: 70vh;
   }
-
+  .latestVideo-videos,
+  .latestVideo-videos img {
+    width: 100%;
+    height: 100%;
+  }
+  .latestVideo-moreVideos {
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+  }
   .latestVideo-moreVideos {
     display: flex;
     flex-direction: column;
     overflow: auto;
-    height: 55vh;
+    height: 100%;
     margin: 0 auto;
   }
-
   .latestVideo-moreVideos h4:not(:last-child) {
     margin-bottom: 15px;
   }
-
-  
+}
+@media (min-width: 1200px) {
+  .vvn {
+    width: 70%;
+    margin-left: 30px;
+  }
 }

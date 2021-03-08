@@ -24,7 +24,7 @@ function BlogSection() {
           <img src='https://terrigen-cdn-dev.marvel.com/content/prod/1x/flerken.jpg' alt="Marvel" />
           <div>
             <p>Culture & Lifestyle</p>
-            <h3>Peek Inside the Pages of ‘Beware the Flerken!’ With Writer Calliope Glass and Illustrator Rob McClurkan</h3>
+            <h3>Peek Inside the Pages of ‘Beware the Flerken!’ With Writer Calliope Glass</h3>
           </div>
         </div>
         <div>
@@ -37,13 +37,13 @@ function BlogSection() {
       </div>
       <div className="pagination">
         <a href="q">&laquo;</a>
-        <a className="active" href="w">1</a>
-        <a href="e">2</a>
-        <a href="t">3</a>
-        <a href="s">4</a>
-        <a href="a">5</a>
-        <a href="f">...</a>
-        <a href="g">NEXT</a>
+        <a className="active" href="#">1</a>
+        <a href="#">2</a>
+        <a href="#">3</a>
+        <a href="#">4</a>
+        <a href="#">5</a>
+        <a href="#">...</a>
+        <a href="#">NEXT</a>
       </div>
     </section>
   );

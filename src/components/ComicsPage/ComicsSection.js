@@ -1,6 +1,6 @@
 import React, { useState, useRef, useCallback } from 'react';
-import {Link} from 'react-router-dom';
-import {GetComics} from './GetComics';
+import { Link } from 'react-router-dom';
+import { GetComics } from './GetComics';
 import Loader from '../common/Loader';
 import './ComicsPage.css';
 

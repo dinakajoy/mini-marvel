@@ -8,10 +8,10 @@ function Showcase() {
     const navCtrl = document.querySelector('.ctrl-lg-footerNavbar');
     const nav = document.querySelector('.lg-footerNavbar');
     const bounding = navCtrl.getBoundingClientRect();
-    if (bounding.top <= 5 && bounding.top <= 6) {
+    if (bounding.top <= 6) {
       nav.style.position = 'fixed';
       nav.style.bottom = '0';
-    } else if (bounding.top > 5){
+    } else if (bounding.top > 5) {
       nav.style.position = 'absolute';
       nav.style.bottom = '20%';
     }
