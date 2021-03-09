@@ -1,7 +1,9 @@
 import React, { useState, useRef, useCallback } from 'react';
+import { LazyLoadImage } from 'react-lazy-load-image-component';
 import {Link} from 'react-router-dom';
 import GetComicsIssue from './GetComicIssues';
 import Loader from '../common/Loader';
+import 'react-lazy-load-image-component/src/effects/blur.css';
 import './ComicsIssuePage.css';
 
 function ComicsIssueSection() {
@@ -75,7 +77,7 @@ function ComicsIssueSection() {
                 <div ref={lastComicsIssueElementRef} key={index}>
                   <Link to={`/comics/${comicIssue.id}`}>
                     <div key={comicIssue.id} className="comicsIssuepage-details">
-                      <img data-src={`${comicIssue.thumbnail.path}.${comicIssue.thumbnail.extension}`} alt={comicIssue.title} />
+                      <img data-src={`${comicIssue.thumbnail.path}.${comicIssue.thumbnail.extension}`} alt={comicIssue.title} width="100%" height="300px" />
                       <div className="comicsIssuepage-title">
                         <h2>{comicIssue.title}</h2>
                         <p>{getDate(comicIssue.modified)}</p>
@@ -88,7 +90,7 @@ function ComicsIssueSection() {
               return (
                 <Link to={`/comics/${comicIssue.id}`}>
                   <div key={comicIssue.id} className="comicsIssuepage-details">
-                    <img src={`${comicIssue.thumbnail.path}.${comicIssue.thumbnail.extension}`} alt={comicIssue.title} />
+                    <LazyLoadImage src={`${comicIssue.thumbnail.path}.${comicIssue.thumbnail.extension}`} alt={comicIssue.title} placeholder={`${process.env.PUBLIC_URL}/images/latest-vid3.jpg`} width="100%" height="300px" effect="blur" />
                     <div className="comicsIssuepage-title">
                       <h2>{comicIssue.title}</h2>
                       <p>{getDate(comicIssue.modified)}</p>

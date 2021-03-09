@@ -1,7 +1,9 @@
 import React, { useState, useRef, useCallback } from 'react';
+import { LazyLoadImage } from 'react-lazy-load-image-component';
 import { Link } from 'react-router-dom';
 import { GetComics } from './GetComics';
 import Loader from '../common/Loader';
+import 'react-lazy-load-image-component/src/effects/blur.css';
 import './ComicsPage.css';
 
 function ComicsSection() {
@@ -87,7 +89,7 @@ function ComicsSection() {
               return (
                 <Link to={`/comics/${comic.id}`}>
                   <div key={comic.id} className="comicspage-details">
-                    <img src={`${comic.thumbnail.path}.${comic.thumbnail.extension}`} alt={comic.title} />
+                    <LazyLoadImage src={`${comic.thumbnail.path}.${comic.thumbnail.extension}`} alt={comic.title} placeholder={`${process.env.PUBLIC_URL}/images/latest-vid3.jpg`} width="100%" height="300px" effect="blur" />
                     <div className="comicspage-title">
                       <h2>{comic.title}</h2>
                       <p>{getDate(comic.modified)}</p>
