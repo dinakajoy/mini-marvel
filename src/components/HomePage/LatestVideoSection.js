@@ -7,7 +7,7 @@ function LatestVideoSection() {
       <h2>Latest Videos</h2>
       <div className="latestVideo-grid">
         <div className="latestVideo-videos">
-          <img src={`${process.env.PUBLIC_URL}/images/latest-vid1.jpg`} alt="Marvel Latest Videos" width="100%" />
+          {/* <img src={`${process.env.PUBLIC_URL}/images/latest-vid1.jpg`} alt="Marvel Latest Videos" width="100%" /> */}
         </div>
         <div className="latestVideo-moreVideos inner-scroll">
           <div className="video">

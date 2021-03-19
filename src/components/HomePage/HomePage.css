@@ -128,7 +128,7 @@
 .latestVideo-videos,
 .latestVideo-videos img {
   width: 100%;
-  height: 100%;
+  /* height: 100%; */
 }
 .latestVideo-moreVideos {
   width: 100%;
@@ -188,9 +188,6 @@
     height: auto;
   }
 }
-/* .latestVideo-moreVideos video {
-  border: 2px solid #e62429;
-} */
 /* End of LatestVideoSection Styles */
 
 /* ComicsSection Styles */
@@ -387,25 +384,29 @@
     padding: 0px 20px;
     height: 70vh;
   }
+  .latestVideo-videos {
+    background-image: url(../../images/latest-vid1.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
   .latestVideo-videos,
-  .latestVideo-videos img {
+  .latestVideo-moreVideos {
     width: 100%;
     height: 100%;
   }
   .latestVideo-moreVideos {
-    width: 100%;
-    height: 100%;
     overflow: auto;
-  }
-  .latestVideo-moreVideos {
     display: flex;
     flex-direction: column;
-    overflow: auto;
     height: 100%;
     margin: 0 auto;
   }
   .latestVideo-moreVideos h4:not(:last-child) {
     margin-bottom: 15px;
+  }
+  .vvn {
+    padding: 0px 20px;
   }
 }
 @media (min-width: 1200px) {

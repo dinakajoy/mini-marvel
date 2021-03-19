@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import './HomePage.css';
 
 function BlogSection() {
@@ -36,14 +37,14 @@ function BlogSection() {
         </div>
       </div>
       <div className="pagination">
-        <a href="/">&laquo;</a>
-        <a className="active" href="/">1</a>
-        <a href="/">2</a>
-        <a href="/">3</a>
-        <a href="/">4</a>
-        <a href="/">5</a>
-        <a href="/">...</a>
-        <a href="/">NEXT</a>
+        <Link to="/">&laquo;</Link>
+        <Link to="/" className="active">1</Link>
+        <Link to="/">2</Link>
+        <Link to="/">3</Link>
+        <Link to="/">4</Link>
+        <Link to="/">5</Link>
+        <Link to="/">...</Link>
+        <Link to="/">NEXT</Link>
       </div>
     </section>
   );
