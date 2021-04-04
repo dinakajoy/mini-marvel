@@ -5,7 +5,7 @@ Main Screens: <br />
 `Comics Screen:` List all Captain Marvel comic issues screen<br />
 `Comics Issues Screen:` Displays a list of all comic in which Captain Marvel appears<br />
 With a feature to sort the list by edition release date in ascending or descending order. It also uses Infinite Scroll and LazyLoad for the images<br />
-`Detail Screen:` Displays details of a comic/comics issue from the list<br />
+`Detail Screen:` Displays details of a comic/comics issue when selected from the list<br />
                     
 ## Tools
 This app was built using:  
