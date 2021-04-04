@@ -12,7 +12,7 @@ ReactDOM.render(
       <ScrollToTop>
         <MainApp />
       </ScrollToTop>
-    </Router>,
+    </Router>
   </React.StrictMode>,
   document.getElementById('root')
 );
