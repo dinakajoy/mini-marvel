@@ -10,6 +10,7 @@ import NotFound from '../NotFound';
 import './App.css';
 
 function MainApp() {
+
   return (
     <>
       <Header />
