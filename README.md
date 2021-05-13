@@ -1,3 +1,6 @@
+# Mini Marvel App
+
+## Description
 This is a replicate of [Marvel's Page](https://www.marvel.com/characters/captain-marvel-carol-danvers) with the Connections section replaced with Captain Marvels Comics. <br />
 
 Main Screens: <br />
@@ -26,3 +29,6 @@ The page will reload if you make edits and you will also see any lint errors in 
 
 Run `npm run build`to build out the app for production. <br />
 Move the generated build folder to your hosting platform <br /><br />
+
+## Author
+[Odinaka Joy](http://dinakajoy.com)
